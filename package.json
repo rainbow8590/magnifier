@@ -1,0 +1,17 @@
+{
+  "name": "magnifier",
+  "version": "1.0.0",
+  "description": "fangdajing plugin",
+  "main": "jQuery.magnifier.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "magnifier"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^1.11.1"
+  }
+}

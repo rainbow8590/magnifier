@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style type="text/css">
+    #min{width: 384px;height:216px;margin: 100px;position: relative;} 
+    #min img{width: 384px;height:216px;}
+    #min .z{width:60px;height:60px;background: rgba(0,0,0,0.2);position: absolute;top:20px;left:20px;display:none;}
+    #max{width: 300px;height:300px;overflow: hidden;display: none;position: absolute;}
+</style>
+</head>
+<body>
+
+<div  id="min">
+    <img src="images/01.jpg" id="smallImg">
+    <div class="z"></div>
+</div>
+<div id="max"><img src="images/01.jpg" id="bigImg"></div>
+
+
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../js/jQuery.magnifier.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function() {
+    $("#min").magnifier({
+        max:"#max",
+        min:"#min",
+        z:".z",
+        bigImg:'#bigImg',
+        smallImg:'#smallImg',
+        gap:10
+    });
+});
+
+</script>
+</body>
+</html>
